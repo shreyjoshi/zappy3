@@ -40,6 +40,8 @@ background-size: 1400px 680px;
     <ul class="nav navbar-nav navbar-right">
   
       <li class="active"><a href="logout.jsp"><span class="glyphicon glyphicon-log-out"></span>Logout</a></li>
+       <li class="active"><a href="searchbookedappointment.jsp">bookedappointment</a></li>
+      
          </ul>
            </ul>
          </div>

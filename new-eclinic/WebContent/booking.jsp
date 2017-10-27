@@ -32,7 +32,7 @@
         </style>
         <script type="text/javascript">
         	$(document).ready(function(){
-        		$("#time-slot").hide();
+        		$("#timeslot").hide();
         		$("#categ").change(function(){
         			var data= "category="+$("#categ").val();
         			//alert(data);
@@ -47,10 +47,10 @@
             		});
         		});
         		$("#appdate").change(function(){
-        			$("#time-slot").show();
+        			$("#timeslot").show();
         			var data="appdate="+$("#appdate").val()+"&dname="+$("#dname").val();
         			//var data1="dname="+$("#dname").val();
-        			//alert(data+" aur "+data1);
+        			alert(data);
         			$.ajax({
         				url:'FetchApptime',
         				data:data,
@@ -106,11 +106,11 @@
                         </tr>
                         <tr>
                             <td height="40">  <strong>Add date(in dd-mm-yyyy): </strong></div><br> </td>          
-                            <td >  <input type="date" name="appdate" id="appdate" required/></td> 
+                            <td >  <input type="text" name="appdate" id="appdate" required/></td> 
                         <br><br>
                         </tr>
                         
-                   <div id="time-slot">
+                   <div id="timeslot">
                      <tr>
                          <td height="40">  <strong>Available time: </strong></div><br> </td>          
                          <td >  <select name="apptime" id="apptime">
